@@ -43,6 +43,11 @@ const games = [
           metacritic: 95,
         },
         {
+          title: 'midnight club 3: dub edition remix',
+          platform: 'ps2',
+          metacritic: 92,
+        },
+        {
           title: 'dirt rally',
           platform: 'pc',
           metacritic: 86,
@@ -76,6 +81,11 @@ const games = [
           title: 'medal of honor',
           platform: 'ps one',
           metacritic: 92,
+        },
+        {
+          title: 'valorant',
+          platform: 'pc',
+          metacritic: 47,
         },
       ]
     },
