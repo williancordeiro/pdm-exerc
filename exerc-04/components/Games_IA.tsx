@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
-import games from '../../data/games';
+import games from '../data/data';
 
 const Games = () => {
   return (

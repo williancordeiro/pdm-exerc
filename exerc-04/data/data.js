@@ -3,6 +3,11 @@ const games = [
       category: 'rpg',
       data: [
         {
+          title: 'baldur\'s gate 3',
+          platform: 'pc',
+          metacritic: 96
+        },
+        {
           title: 'horizon zero dawn',
           platform: 'ps4',
           metacritic: 89,
