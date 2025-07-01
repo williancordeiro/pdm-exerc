@@ -1,6 +1,6 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { Stack, useLocalSearchParams } from 'expo-router'
+import { router, Stack, useLocalSearchParams } from 'expo-router'
 
 export default function index() {
 
@@ -15,6 +15,10 @@ export default function index() {
         <Text style={styles.name} >Name: <Text style={styles.userName}>{ userName }</Text></Text>
         <Text style={styles.bio}>Bio:</Text>
       </View>
+
+      <TouchableOpacity onPress={() => router.navigate('/')}>
+        <Text style={styles.link}>Come Back</Text>
+      </TouchableOpacity>
     </View>
   )
 }
@@ -25,6 +29,16 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     marginTop: 20,
+  },
+  link: {
+    fontFamily: "roboto",
+    fontSize: 20,
+    color: "#54ACEA",
+    margin: 10,
+    marginTop: 50,
+    alignItems: 'center',
+    textAlign: 'center',
+    fontWeight: "bold",
   },
   icon: {
     marginTop: 20,

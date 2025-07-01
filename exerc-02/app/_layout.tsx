@@ -4,7 +4,16 @@ import { Stack, Tabs } from 'expo-router'
 
 export default function _layout() {
   return (
-    <Stack>        
+    <Stack
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: '#54ACEA',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: { fontWeight: 'bold' },
+        headerTitleAlign: 'center',
+      }}
+    >        
         
     </Stack>
   )
