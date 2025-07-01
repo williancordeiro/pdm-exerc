@@ -1,4 +1,4 @@
-import { View, StyleSheet, TextInput, Button } from 'react-native'
+import { View, StyleSheet, TextInput, Button, StatusBar } from 'react-native'
 import React, { useState } from 'react'
 import { Link, router, Stack, useRouter } from 'expo-router'
 
@@ -21,7 +21,13 @@ export default function Feed() {
 
   return (
     <View>
-      <Stack.Screen name='feed/index' options={{title: "Feed"}} />
+      <StatusBar barStyle={'light-content'} />
+      <Stack.Screen 
+        name='feed/index'
+        options={{
+          title: "Feed"
+        }}
+      />
 
       <View style={styles.search}>
         <TextInput style={styles.input} onChangeText={setSearch} value={search} placeholder='Search user. . .' />
@@ -29,7 +35,7 @@ export default function Feed() {
           <Button title="Search" onPress={handleSearch} />
         </View>
       </View>
-      <Link style={styles.link} href={"/"}>Return to Home</Link>
+      <Link style={styles.link} href={'/'} onPress={router.back}>Return to Home</Link>
     </View>
   )
   
